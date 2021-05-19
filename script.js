@@ -5,6 +5,7 @@ document.getElementById('shake').addEventListener('click', shake);
 function newBoard() {
     deleteBoard();
     let size = prompt("How many squares?", 50);
+    size = size <100 ? size : 100;
     // create number of rows equal to user input 'size'
     for (let i = 0; i < size; i++){
         let row = document.createElement("div");
@@ -25,12 +26,10 @@ function populateCells (row, size){
     for(let i = 0; i<size; i++){
         let cell = document.createElement("div");
         cell.classList.add('cell');
-        
-        // let spacer = document.createElement('div');
-        // spacer.classList.add('spacer');
-        // cell.appendChild(spacer);
-
         cell.addEventListener('mouseover', darkenCell);
+        cell.addEventListener('touchstart', darkenCell);
+        cell.addEventListener('touchmove', darkenCell);
+        cell.addEventListener('touchend', darkenCell);
         row.appendChild(cell);
     }
 }
