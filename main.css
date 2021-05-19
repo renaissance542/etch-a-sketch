@@ -1,0 +1,124 @@
+body {
+    background-color: #222222;
+    padding: 2px;
+    margin: auto;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: block;
+}
+
+
+header {
+    color: aliceblue;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: center;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#title {
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 3px;
+    padding: 1px 3px;
+}
+
+.menu {
+    padding: 1px 3px;
+}
+
+.menu:hover {
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 3px;
+}
+
+footer {
+    height: 5%;
+    flex: 1 1 auto;
+}
+
+#gameBoard {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 1px;
+
+}
+
+.row {
+    height: auto;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 auto;
+
+}
+
+.cell {
+    color: black;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+    width: auto;
+    flex: 1 1 auto;
+}
+
+.spacer {
+    padding-top: 100%;
+}
+
+.darkened {
+    background-color: black;
+    color: black;
+}
+
+.shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: 3;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
