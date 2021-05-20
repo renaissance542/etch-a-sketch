@@ -18,7 +18,7 @@ div {
 
 
 header {
-    color: hsl(150.1, 90%, 40%);
+    color: hsl(180, 65%, 65%);
     font-size: 0.8em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-self: center;
@@ -30,9 +30,9 @@ header {
 }
 
 #title {
-    color: hsl(0,89.8%,60%);
+    color: hsl(0,90%,50%);
     border-style: solid;
-    border-color: hsl(0,89.8%,60%);
+    border-color: hsl(0,90%,50%);
     border-radius: 3px;
     padding: 1px 3px;
 }
@@ -42,9 +42,9 @@ header {
 }
 
 .menu:hover {
-    color: hsl(150.1, 90%, 50%);
+    color: hsl(150, 90%, 50%);
     border-style: solid;
-    border-color: hsl(150.1, 90%, 50%);
+    border-color: hsl(150, 90%, 50%);
     border-radius: 3px;
 }
 
@@ -60,7 +60,7 @@ footer {
     width: 100%;
     height: 100%;
     border-style: solid;
-    border-color: hsl(0,90%,50%);
+    border-color: hsl(0,80%,40%);
     border-width: 8px;
     border-radius: 5px;
 
